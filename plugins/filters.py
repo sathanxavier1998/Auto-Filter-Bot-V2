@@ -26,7 +26,7 @@ from config import AUTH_USERS
 
 BUTTONS = {}
  
-@Client.on_message(filters.group & filters.text)
+@Client.on_message(filters.group & filters.text & filters.bot)
 async def filter(client: Bot, message: Message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
@@ -169,7 +169,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("HELP", callback_data="help_data"),
                     InlineKeyboardButton("ABOUT", callback_data="about_data")],
-                [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")]
+                [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/cinemaathattakam_chanel")]
             ])
 
             await query.message.edit_text(
@@ -184,7 +184,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("BACK", callback_data="start_data"),
                     InlineKeyboardButton("ABOUT", callback_data="about_data")],
-                [InlineKeyboardButton("⭕️ SUPPORT ⭕️", url="https://t.me/TroJanzSupport")]
+                [InlineKeyboardButton("⭕️ DEV ⭕️", url="https://t.me/sathan_of_telegram")]
             ])
 
             await query.message.edit_text(
