@@ -22,7 +22,7 @@ async def start(client, message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/cinemaathattakam_channel")
+                            "⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/cinemaa_thattakam_channel")
                     ]
                 ]
             ),
